@@ -1,11 +1,13 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio Version 16
-VisualStudioVersion = 16.0.29519.181
+# Visual Studio Version 17
+VisualStudioVersion = 17.1.32120.378
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{0F945BC7-B62B-48C1-88D1-76FC8F3A963B}"
 	ProjectSection(SolutionItems) = preProject
 		.editorconfig = .editorconfig
+		Directory.Build.props = Directory.Build.props
+		Directory.Build.rsp = Directory.Build.rsp
 	EndProjectSection
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Main", "src\Main\Main.csproj", "{E6199770-0ED9-4E3B-A71A-90BDD8679E0E}"
@@ -14,9 +16,29 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Shared", "Shared", "{C06117
 EndProject
 Project("{D954291E-2A0B-460D-934E-DC6B0785DB48}") = "Strings", "shared\Strings\Strings.shproj", "{8F64AD08-39F7-4E97-9F80-B79531CF2EA0}"
 EndProject
+Project("{D954291E-2A0B-460D-934E-DC6B0785DB48}") = "Resources", "shared\Resources\Resources.shproj", "{8342FDB4-671C-447C-BF95-5D4E01C5C2ED}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "shared", "shared", "{F28A1521-91DD-4FEF-9E92-0A764FA81C9E}"
+	ProjectSection(SolutionItems) = preProject
+		shared\Directory.Build.targets = shared\Directory.Build.targets
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{4C2C9425-B304-4E31-B53B-24C5779A6E64}"
+	ProjectSection(SolutionItems) = preProject
+		src\Directory.Build.props = src\Directory.Build.props
+		src\Directory.Build.targets = src\Directory.Build.targets
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "build", "build", "{636318F0-2283-4CDA-85F9-5182CD441C73}"
+	ProjectSection(SolutionItems) = preProject
+		build\MyScript.Recognition.Assets.targets = build\MyScript.Recognition.Assets.targets
+	EndProjectSection
+EndProject
 Global
 	GlobalSection(SharedMSBuildProjectFiles) = preSolution
+		shared\Resources\Resources.projitems*{8342fdb4-671c-447c-bf95-5d4e01c5c2ed}*SharedItemsImports = 13
 		shared\Strings\Strings.projitems*{8f64ad08-39f7-4e97-9f80-b79531cf2ea0}*SharedItemsImports = 13
+		shared\Resources\Resources.projitems*{e6199770-0ed9-4e3b-a71a-90bdd8679e0e}*SharedItemsImports = 4
 		shared\Strings\Strings.projitems*{e6199770-0ed9-4e3b-a71a-90bdd8679e0e}*SharedItemsImports = 4
 	EndGlobalSection
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -60,6 +82,10 @@ Global
 	EndGlobalSection
 	GlobalSection(NestedProjects) = preSolution
 		{8F64AD08-39F7-4E97-9F80-B79531CF2EA0} = {C061174B-C7D8-4F63-9BC1-F6FB892CEC91}
+		{8342FDB4-671C-447C-BF95-5D4E01C5C2ED} = {C061174B-C7D8-4F63-9BC1-F6FB892CEC91}
+		{F28A1521-91DD-4FEF-9E92-0A764FA81C9E} = {0F945BC7-B62B-48C1-88D1-76FC8F3A963B}
+		{4C2C9425-B304-4E31-B53B-24C5779A6E64} = {0F945BC7-B62B-48C1-88D1-76FC8F3A963B}
+		{636318F0-2283-4CDA-85F9-5182CD441C73} = {0F945BC7-B62B-48C1-88D1-76FC8F3A963B}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {3E5D458F-3E4B-47AF-A1DE-D3BAA82C73E7}

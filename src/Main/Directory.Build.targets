@@ -1,0 +1,9 @@
+<!--See: https://docs.microsoft.com/en-us/visualstudio/msbuild/customize-your-build#import-order-->
+<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <!--Import the outer common targets.-->
+  <Import
+    Condition="Exists($([MSBuild]::GetPathOfFileAbove('Directory.Build.targets', '$(MSBuildThisFileDirectory)../')))"
+    Project="$([MSBuild]::GetPathOfFileAbove('Directory.Build.targets', '$(MSBuildThisFileDirectory)../'))" />
+  <!--Initialize MyScript recognition assets.-->
+  <Import Project="$(RepositoryDirectory)/build/MyScript.Recognition.Assets.targets" />
+</Project>
