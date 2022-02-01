@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Diagnostics;
 using Windows.ApplicationModel;
 using Windows.ApplicationModel.Activation;
@@ -7,7 +7,7 @@ using Windows.UI.Xaml.Controls;
 using Windows.UI.Xaml.Navigation;
 using Microsoft.VisualStudio.TestPlatform.TestExecutor;
 
-namespace MyScript.Tests.Community.Toolkit.UnitTests
+namespace MyScript.Tests.Community.Extensions.UnitTests
 {
     /// <summary>
     ///     Provides application-specific behavior to supplement the default Application class.
